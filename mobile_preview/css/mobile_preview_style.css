@@ -1,0 +1,88 @@
+
+.wrapper {
+       width: 90%;
+       margin: auto;
+       text-align: center;
+}
+
+.iphone #mobile-preview-inner {
+       height: 568px;
+       width:320px;
+       background-color:white;
+       margin: auto;
+}
+.ipad #mobile-preview-inner {
+       height: 768px;
+       width:1024px;
+       background-color:red;
+       margin: auto;
+}
+
+#mobile-preview-outer {
+       background-color:black;
+
+       display: inline-block;
+       border-radius: 15px;
+       margin: auto;
+       margin-top: 10px;
+}
+.iphone{
+       padding:60px 20px;
+}
+.ipad{
+       padding:20px 60px;
+}
+
+#options-window {
+       height: 300px;
+       width: 300px;
+       border:1px solid rgba(0,0,0,0.25);
+       border-radius: 5px;
+       padding:20px 10px;
+       position: fixed;
+       top: 50px;
+       left:50px;
+       
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+       font-size:25px;
+       color:rgba(0,0,0,0.5);
+       line-height: 30px;
+       background-color:white;
+}
+#options-window h2 {
+       text-align: left;
+       
+}
+#options-window h1{
+       font-size:30px;
+       color:rgba(0,0,0,0.5);
+       line-height: 40px; 
+}
+
+#url-input {
+       height: 30px;
+       width:100%;
+       margin-top: 10px;
+}
+
+body {
+       background-color:rgba(0,0,0,0.1);
+}
+
+#input-submit {
+       height: 30px;
+       width:60px;
+       background-color:rgba(0,0,0,0.25);
+       border:1px solid rgba(0,0,0,0.25);
+       color:white;
+       border-radius:2.5px;
+       margin: auto;
+       margin-top: 10px;
+       font-size:20px;
+       padding-top: 4px;
+       line-height: 20px;
+       cursor: pointer;
+}
+#input-submit:hover{
+       background-color:rgba(0,0,0,0.1);
+}
