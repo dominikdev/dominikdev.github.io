@@ -1,0 +1,132 @@
+#preview-wrapper-inner {
+       height: 200%;
+       width:100%;
+       position: relative;
+       transition: all 1s ease;
+       
+}
+#preview-wrapper-inner.one{
+       top:0;
+}
+#preview-wrapper-inner.two{
+       top:-100%;
+}
+#preview-wrapper-outer {
+       height: 100%;
+       width:100%;
+       overflow: hidden;
+       position: relative;
+}
+
+#full-preview {
+       width: 100%;
+       height: 50%;
+       overflow: scroll;
+}
+#full-preview iframe{
+       height: 100%;
+       width:100%;
+}
+
+.iphone{
+       width:322px;
+       height:570px;
+       margin:auto;
+       margin-top: 0px;
+       overflow: hidden;
+       border:1px solid rgba(0,0,0,0.5);
+       background-color:white;
+}
+
+#mobile-preview{
+       width: 100%;
+       height: 50%;
+       padding-top: 25px;
+       background-color:rgba(0,0,0,0.25);
+}
+
+  .content-area-mob{
+              width:25% !important;
+              height: 100% !important;
+              float:left;
+              overflow:visible !important;
+              padding:10px 20px;
+              overflow-y: scroll;
+       }
+       .nav-bar-mob{      
+              height:5% !important;
+              background-color:#f7c800 !important;
+       }
+
+       .top-of-nav-mob{
+              height:100% !important;
+       }
+       #content-area-wrapper-mob{
+              height: 95% !important;
+              overflow: visible;
+              width:100%;
+              position:relative;
+              top:0;
+              transition: all 1s ease;
+              margin-top: 0px;
+       }
+       .hide-mob-mob{
+              display: none;
+       }
+       .content-wrapper-outer-mob {
+              height:95% !important;
+              overflow: visible !important;
+       }
+.iphone iframe{
+       height: 100%;
+       width: 100%;
+}
+
+#mobile-preview-button {
+       height: 100px;
+       width:200px;
+       background-color:rgba(0,0,0,0.8);
+       color:white;
+       border-top-left-radius: 10px;
+       border-top-right-radius: 10px;
+       position: absolute;
+       z-index: 9999;
+       bottom: 0;
+       left: 50%;
+       margin-left:-100px;
+       cursor:pointer;
+       
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+       text-align: center;
+       font-size:30px;
+       padding-top:20px;
+       transition:all 1s ease;
+       transition-delay: 1s;
+}
+#mobile-preview-button.hidden,#full-preview-button.hidden{
+       opacity: 0.0;
+       cursor: default;
+}
+
+#full-preview-button {
+       height: 100px;
+       width:200px;
+       background-color:rgba(0,0,0,0.8);
+       color:white;
+       border-bottom-left-radius: 10px;
+       border-bottom-right-radius: 10px;
+       position: absolute;
+       z-index: 9999;
+       top: 0;
+       left: 20%;
+       margin-left:-100px;
+       cursor:pointer;
+       
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+       text-align: center;
+       font-size:30px;
+       padding-top:20px;
+       transition:all 1s ease;
+       transition-delay: 1s;
+
+}

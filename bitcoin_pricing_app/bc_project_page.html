@@ -1,0 +1,45 @@
+<html>
+       <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link href="css/reset.css" rel="stylesheet" type="text/css" />
+              <link href="css/responsive_ten_grid.css" rel="stylesheet" type="text/css" />
+              <link href="css/project_page_style.css" rel="stylesheet" type="text/css" />
+
+
+              
+       </head>
+<body>
+       <div id="preview-wrapper-outer">
+              <div id="mobile-preview-button" onclick="bringUpMobilePreview()">
+                     View Mobile Preview
+              </div>
+              <div id="full-preview-button" class="hidden" onclick="bringUpFullPreview()">
+                     View Full Preview
+              </div>
+              <div id="preview-wrapper-inner" class="one">
+                     <div id="full-preview">
+                            <iframe src="bitcoin_pricing_app/index.html"></iframe>
+                     </div>
+                     <div id="mobile-preview">
+                            <div class="iphone">
+                                   <iframe src="bitcoin_pricing_app/index.html"></iframe>
+                            </div>
+                     </div>
+              </div>
+       </div>
+
+</body>
+<script>
+       function bringUpMobilePreview(){
+              document.getElementById('preview-wrapper-inner').setAttribute('class','two');
+              document.getElementById('mobile-preview-button').setAttribute('class','hidden');
+              document.getElementById('full-preview-button').setAttribute('class','');
+       }
+       function bringUpFullPreview(){
+              document.getElementById('preview-wrapper-inner').setAttribute('class','one');
+              document.getElementById('mobile-preview-button').setAttribute('class','');
+              document.getElementById('full-preview-button').setAttribute('class','hidden');
+       }
+</script>
+</html>

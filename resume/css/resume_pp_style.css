@@ -1,0 +1,113 @@
+
+#outer-preview-wrapper {
+       height: 100%;
+       width: 100%;
+       overflow: hidden;
+       position: relative;
+}
+
+#inner-preview-wrapper {
+       height: 100%;
+       width: 200%;
+       position: relative;
+       transition: all 1s ease;
+}
+#inner-preview-wrapper.one{
+       left:0;
+}
+#inner-preview-wrapper.two{
+       left:-100%;
+}
+
+
+
+#full-preview {
+       height: 100%;
+       width: 50%;
+       float: left;
+}
+#full-preview iframe, .iphone iframe{
+       height: 100%;
+       width:100%;
+}
+
+.iphone {
+       height: 570px;
+       width: 322px;
+       border:1px solid black;
+       margin: auto;
+       background-color: white;
+       
+}
+
+#mobile-preview {
+       height: 100%;
+       width: 50%;
+       float: left;
+       padding-top:25px;
+       background-color:rgba(0,0,0,0.25);
+}
+
+#mobile-preview-button, #full-preview-button {
+       height: 150px;
+       width:150px;
+       background-color:rgba(0,0,0,0.8);
+       color:white;
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+       padding:10px;
+
+       font-size:30px;
+       text-align: center;
+       cursor: pointer;
+       z-index: 9999;
+       
+       position: absolute;
+       top:50%;
+       margin-top: -100px;
+       
+       transition: all 1s ease;
+}
+#mobile-preview-button{
+       right:0px;
+       border-top-left-radius: 5px;
+       border-bottom-left-radius: 5px;
+       padding-top:30px;
+}
+#full-preview-button{
+       left:0px;
+       border-top-right-radius: 5px;
+       border-bottom-right-radius: 5px;
+       padding-top:45px;
+}
+.hidden{
+       opacity:0.0;
+       cursor: default;
+}
+#github-code-button {
+       height: 50px;
+       width:300px;
+       background-color:rgba(0,0,0,0.8);
+       color:white;
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+       padding:10px;
+
+       font-size:30px;
+       text-align: center;
+       cursor: pointer;
+       z-index: 9999;
+       
+       position: absolute;
+       bottom:0px;
+       left:50%;
+       margin-left: -150px;
+       
+       transition: all 1s ease;
+       transition-delay: 5s;
+       
+       border-top-left-radius: 5px;
+       border-top-right-radius: 5px;
+}
+#github-code-button a{
+       text-decoration: none;
+       color: inherit;
+}

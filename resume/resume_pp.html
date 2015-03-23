@@ -1,0 +1,42 @@
+<html>
+  <head>
+       <title>Online Resume Template</title>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link href="resume/css/reset.css" rel="stylesheet" type="text/css" />
+       <link href="css/responsive_ten_grid.css" rel="stylesheet" type="text/css" />
+       <link href="css/resume_pp_style.css" rel="stylesheet" type="text/css" />
+  </head>
+<body> 
+       <div id="outer-preview-wrapper">
+              <div id="mobile-preview-button" onclick="clickedMobilePreview()">View Mobile Preview</div>
+              <div id="full-preview-button" class="hidden" onclick="clickedFullPreview()">View Full Preview</div>
+              <div id="github-code-button" class="hidden">
+                     <a href="http://www.github.com">View Code On Github</a>
+              </div>
+              <div id="inner-preview-wrapper" class="one">
+                     <div id="full-preview">
+                            <iframe src="resume/resume.html"></iframe>
+                     </div>
+                     <div id="mobile-preview">
+                            <div class="iphone">
+                                   <iframe src="resume/resume.html"></iframe>
+                            </div>
+                     </div>
+              </div>
+       </div>
+</body>
+<script>
+       function clickedMobilePreview(){
+              document.getElementById('inner-preview-wrapper').setAttribute('class','two');
+              document.getElementById('full-preview-button').setAttribute('class','');
+              document.getElementById('mobile-preview-button').setAttribute('class','hidden');
+              document.getElementById('github-code-button').setAttribute('class','');
+       }
+       function clickedFullPreview(){
+              document.getElementById('inner-preview-wrapper').setAttribute('class','one');
+              document.getElementById('full-preview-button').setAttribute('class','hidden');
+              document.getElementById('mobile-preview-button').setAttribute('class',''); 
+       }
+</script>
+</html>

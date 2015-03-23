@@ -1,0 +1,82 @@
+
+.wrapper {
+       width:90%;
+       padding-top: 50px;
+       margin: auto;
+       font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+}
+
+.page-title {
+       font-size:30px;
+       text-align: center;
+       color:rgba(0,0,0,0.6);
+}
+.page-title a{
+       text-decoration: none;      
+       color:#0076a3;
+}
+a{
+       transition:all 0.5s ease;
+}
+a:hover{
+       opacity: 0.75;
+}
+
+.project-wrapper h1 {
+       text-align:center;
+       font-size:20px;
+       line-height: 30px;
+}
+
+.project-image {
+       width:100%;
+       border:5px solid #0076a3;
+}
+
+.github-code {
+       width: 50%;
+       padding-bottom:20%;
+       border-right:2px solid #0076a3;
+       
+       background-image:url('../images/gh_icon.png');
+       background-size:50px 50px;
+       background-repeat: no-repeat;
+       background-position: top center;
+       float:left;
+}
+.github-code:hover, .github-project:hover{
+       opacity: 0.5;
+}
+.github-code, .github-project{
+       transition:all 0.5s ease;
+}
+
+.link-wrapper {
+       width:100%;
+       height:auto;
+       padding:10%;
+       overflow: auto;
+}
+
+.github-project {
+       width: 50%;
+       padding-bottom:20%;
+       border-left:2px solid #0076a3;
+       
+       background-image:url('../images/home_icon.png');
+       background-size:50px 50px;
+       background-repeat: no-repeat;
+       background-position: top center;
+       float:right;
+
+}
+.github-project, .github-code{
+       position: relative;
+       
+}
+.github-project a, .github-code a{
+       display: block;
+       width: 100%;
+       height: 100%;
+       position: absolute;
+}

@@ -1,0 +1,42 @@
+.nav-item{
+       width:25%;
+       height: 37.5%;
+       margin-top: 10px;
+       float:left;
+
+       background-size: 30px 30px;
+       background-repeat: no-repeat;
+       background-position: center;
+       background-position: center;
+}
+
+#nav-home{    background-image: url('../images/icons/home_icon.png');}
+#nav-pricing{    background-image: url('../images/icons/data_icon.png');}
+#nav-wallet{    background-image: url('../images/icons/money_icon.png');}
+#nav-news{    background-image: url('../images/icons/news_icon.png');}
+
+.nav-bar{      
+       height:15%;
+       background-color:#4c4f54;
+       width:100%;
+}
+
+.top-of-nav {
+       height:37.5%;
+       width:100%;
+       background-color:#f7c800;
+       
+       /*/*font-family: 'Droid Serif', serif;*/*/
+       color:white;
+       text-align: center;
+       font-size:22px;
+       font-weight: 700;
+       padding-top: 4px;
+       text-shadow: 1px 1px 1px rgba(150, 150, 150, 1);
+       
+}
+.top-of-nav span{
+       font-weight: 400;
+}
+
+

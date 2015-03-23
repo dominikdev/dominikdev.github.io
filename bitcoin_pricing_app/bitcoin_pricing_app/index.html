@@ -1,0 +1,227 @@
+<html>
+       <head>
+              <meta charset="utf-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <link href="css/reset.css" rel="stylesheet" type="text/css" />
+              <link href="css/responsive_ten_grid.css" rel="stylesheet" type="text/css" />
+              <link href="css/bitcoin_pricing_style.css" rel="stylesheet" type="text/css" />
+              <script src="js/input_script.js" type="text/javascript"></script>
+              <script src="js/navigation_script.js" type="text/javascript"></script>
+              
+              <script src="js/test_data_generation.js" type="text/javascript"></script>
+              <script src="js/data_graphing.js" type="text/javascript"></script>
+              <script src="js/page_setup.js" type="text/javascript"></script>
+              <script src="js/graph_input_handling.js" type="text/javascript"></script>
+
+              
+       </head>
+<body onload="pageHasLoaded()"> 
+              <div class="nav-bar" id="n-bar">
+                     <div class="top-of-nav">
+                            Bit<span>Coin</span>
+                     </div>
+                     <div class="nav-item" id="nav-home" onclick="movePage(1)"></div>
+                     <div class="nav-item" id="nav-pricing" onclick="movePage(2)"></div>
+                     <div class="nav-item" id="nav-wallet" onclick = "movePage(3)"></div>
+                     <div class="nav-item" id="nav-news" onclick="movePage(4)"></div>
+              </div>
+              <div class="content-wrapper-outer">
+                     <div id="content-area-wrapper" class="ca-wrap slide-one">
+                            <div class="content-area" id="home-content">
+                                   <div class="content-title"></div>
+                                   <div class="content-subtitle">Current Price</div>
+                                   <div class="home-first-row">
+                                          <span>$</span>
+                                          <span id="home-price">285.08</span>
+                                          <div class="change-wrapper up">
+                                                 <div class="up-icon">&#65514;</div>
+                                                 <div id="change-data">1.30%</div>
+                                                 <div class="down-icon">&#65516;</div>
+                                          </div>
+                                   </div>
+                                   
+                                   <div class="home-second-row">
+                                          <div class="home-price-details-wrapper">
+                                                 <div>TODAY'S OPEN</div>
+                                                 <div>$281.36</div>
+                                          </div>
+                                          <div class="home-price-details-wrapper">
+                                                 <div>TODAY'S HIGH</div>
+                                                 <div>$285.37</div>
+                                          </div>
+                                          <div class="home-price-details-wrapper">
+                                                 <div>TODAY'S LOW</div>
+                                                 <div>$280.67</div>
+                                          </div>
+                                          <div class="home-price-details-wrapper">
+                                                 <div>CHANGE</div>
+                                                 <div class="pos">$3.01</div>
+                                          </div>
+                                          <div class="home-price-details-wrapper">
+                                                 <div>MARKET CAP</div>
+                                                 <div>$3.965B</div>
+                                          </div>
+                                          <div class="home-price-details-wrapper">
+                                                 <div>TOTAL BTC</div>
+                                                 <div>13,943,400</div>
+                                          </div>
+                                   </div>
+                                   
+                                   <div class="content-subtitle hide-mob">Latest News</div>
+                                   
+                                   <div class="news-item-wrapper hide-mob">
+                                          <div class="news-item-image">
+                                                 <img src="images/news/news_image_one.png">
+                                          </div>
+                                          <div class="news-item-content">
+                                                 <h1>News Title Here</h1>
+                                                 <p>Sed molestie ullamcorper dolor in varius. Duis tellus felis, fermentum vitae nibh vitae, congue euismod purus.</p>
+                                          </div>
+                                   </div>
+                                   
+                            </div>
+                            <div class="content-area" id="pricing-content">
+                                   <div class="content-title">Bitcoin Price Index</div>
+                                   <div class="graph-wrapper">
+                                          <div id="graph-max">
+                                                 Max: $<span id="max-data">325.00</span>
+                                          </div>
+                                           <div id="graph-min">
+                                                 Min: $<span id="min-data">250.00</span>
+                                          </div>
+                                          <canvas id="graph-canvas" height="400" width="400">
+                                                 
+                                          </canvas>
+                                   </div>
+                                   <div class="graph-nav-wrapper">
+                                          <div class="graph-details">
+                                                 <div class="arrow" id="left-arrow" onclick="clickedArrow(1)">
+                                                        <span>&#65513;</span>
+                                                 </div>
+                                                 <div class="date-wrapper">
+                                                        <span id="start-date">03/08/2015</span>
+                                                        <span>-</span>
+                                                        <span id="end-date">03/15/2015</span>
+                                                 </div>
+                                                 <div class="arrow" id="right-arrow" onclick="clickedArrow(2)">
+                                                        <span>&#65515;</span>
+                                                 </div>
+                                          </div>
+                                          <div class="graph-nav">
+                                                 <div class="graph-nav-item" onclick="clickedGraphNav(1)">1w</div>
+                                                 <div class="graph-nav-item" onclick="clickedGraphNav(2)">1m</div>
+                                                 <div class="graph-nav-item" onclick="clickedGraphNav(3)">3m</div>
+                                                 <div class="graph-nav-item" onclick="clickedGraphNav(4)">1y</div>
+                                                 <div class="graph-nav-item" onclick="clickedGraphNav(5)">All</div>
+                                          </div>
+                                   </div>
+                                  <div class="graph-details-wrapper">
+                                          <div class="gd-left">
+                                                 <div>
+                                                        Start:
+                                                        <span id="graph-start">502.00</span>
+                                                 </div>
+                                                 <div>
+                                                        End:
+                                                        <span id="graph-end">502.00</span>
+                                                 </div>
+                                                 <div>
+                                                        High:
+                                                        <span id="graph-high">502.00</span>
+                                                 </div>
+                                                 <div>
+                                                        Low:
+                                                        <span id="graph-low">502.00</span>
+                                                 </div>
+                                          </div>
+                                          <div class="gd-right">
+                                                 <div id="gd-change-wrapper" class="up">
+                                                        <div class="up-icon">&#65514;</div>
+                                                        <div id="gd-change-data">230.00</div>
+                                                        <div class="down-icon">&#65516;</div>
+                                                 </div>
+                                         </div>
+                                   </div>
+                                   
+                            </div>
+                            <div class="content-area" id="wallet-content">
+                                   <div class="wallet-amount-wrapper">
+                                          <div>Balance</div>
+                                          <div>
+                                                 <span id="wallet-contents">2.741</span>
+                                                 BTC
+                                          </div>
+                                   </div><br>
+                                   <div class="content-subtitle-two">
+                                          To Add Funds, Send BTC to this address:
+                                   </div>
+                                   <div class="btc-address-wrapper">
+                                          1AGNa15ZQXAZUgFiqJ2i7Z2DPU2J6hW62i
+                                   </div>
+                                   <br>
+                                   
+                                   <div class="content-subtitle">Purchase BTC</div><br>
+                                   <form>
+                                          <input type="text" class="purchase-input" placeholder="Amount" id="p-amount-input">
+                                          <div class="purchase-select">
+                                                 <select id="p-bank-select">
+                                                        <option value="default" disabled>Select Account</option>
+                                                        <option value="BAONE">Bank Account #1</option>
+                                                        <option value="BATWO">Bank Account #2</option>
+                                                        <option value="BATHREE">Bank Account #3</option>
+                                                 </select>
+                                          </div>
+                                          <input type="submit">
+                                   </form>
+                                   <br>
+                                   <div class="content-subtitle">Withdraw BTC</div><br>
+                                   <form>
+                                          <input type="text" class="purchase-input" placeholder="Amount" id="w-amount-input">
+                                          <div class="purchase-select">
+                                                 <select id="w-bank-select">
+                                                        <option value="default" disabled>Select Account</option>
+                                                        <option value="BAONE">Bank Account #1</option>
+                                                        <option value="BATWO">Bank Account #2</option>
+                                                        <option value="BATHREE">Bank Account #3</option>
+                                                 </select>
+                                          </div>
+                                          <input type="submit">
+                                   </form>
+
+                                   
+                                   
+                            </div>
+                            <div class="content-area" id="news-content" >
+                                   <div class="content-title">News</div>
+                                   <div class="news-item-wrapper">
+                                          <div class="news-item-image">
+                                                 <img src="images/news/news_image_one.png">
+                                          </div>
+                                          <div class="news-item-content">
+                                                 <h1>News Title Here</h1>
+                                                 <p>Sed molestie ullamcorper dolor in varius. Duis tellus felis, fermentum vitae nibh vitae, congue euismod purus. Etiam nisl est, posuere non augue sit amet, commodo rhoncus urna. Praesent at ultrices diam.</p>
+                                          </div>
+                                   </div>
+                                    <div class="news-item-wrapper">
+                                          <div class="news-item-image">
+                                                 <img src="images/news/news_image_one.png">
+                                          </div>
+                                          <div class="news-item-content">
+                                                 <h1>News Title Here</h1>
+                                                 <p>Sed molestie ullamcorper dolor in varius. Duis tellus felis, fermentum vitae nibh vitae, congue euismod purus. Etiam nisl est, posuere non augue sit amet, commodo rhoncus urna. Praesent at ultrices diam.</p>
+                                          </div>
+                                   </div>
+                                    <div class="news-item-wrapper">
+                                          <div class="news-item-image">
+                                                 <img src="images/news/news_image_one.png">
+                                          </div>
+                                          <div class="news-item-content">
+                                                 <h1>News Title Here</h1>
+                                                 <p>Sed molestie ullamcorper dolor in varius. Duis tellus felis, fermentum vitae nibh vitae, congue euismod purus. Etiam nisl est, posuere non augue sit amet, commodo rhoncus urna. Praesent at ultrices diam.</p>
+                                          </div>
+                                   </div>
+                            </div>
+                     </div>
+
+</body>
+</html>
