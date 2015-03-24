@@ -1,0 +1,4 @@
+.letter {display:inline-block;}
+.letter.hidden{display: none;}
+.word{display: inline-block;}
+

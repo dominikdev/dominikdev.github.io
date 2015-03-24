@@ -1,0 +1,137 @@
+<html>
+<head>
+       <link href="css/reset.css" rel="stylesheet" type="text/css" />
+       <link href="css/typing_framework_style.css" rel="stylesheet" type="text/css" />
+       <link href="css/type_test_style.css" rel="stylesheet" type="text/css" />
+       <script src="js/custom_typing_options.js" type="text/javascript"></script>
+       <script src="js/typing_framework_script.js" type="text/javascript"></script>
+       <script src="js/typing_details_script.js" type="text/javascript"></script>
+</head>
+<body class="page-body" onload="pageLoad()"> 
+<div id="go-to-top" class="is-hidden" onclick="goToTop()">^</div>
+<div id="wrap" class="wrapper s-one">
+       <div class="section" id="section-one">
+              <div id="s-one-next" class="next-button is-hidden is-disabled" onclick="moveToPg(2)">
+                     <div class="text">Learn More</div>
+              </div>
+              <div id="text-wrapper">
+              </div>
+       </div>
+       <div class="section" id="section-two">
+              <div id="s-two-next" class="next-button is-hidden" onclick="moveToPg(3)">
+                     <div class="text">View the Code</div>
+              </div>
+              <div class="content-wrap fade-in" id="c-wrap-two">
+                     <h1>Overview</h1>
+                     <ul>
+                            <li>Simple Animation Script</li>
+                            <li>Written in Vanilla JavaScript</li>
+                            <li>Easy To Implement</li>
+                            <li>Use Custom Typing Speed, Message, and Styling</li>
+                     </ul>
+              </div>
+       </div>
+       <div class="section" id="section-three">
+              <div id="s-three-next" class="next-button is-hidden" onclick="moveToPg(4)">
+                     <div class="text">How To Use It</div>
+              </div>
+               <div class="content-wrap" id="c-wrap-three">
+                      <h2>Overview</h2>
+                      <div class="quarter">
+                            <div class="q-title">HTML</div>
+                                   <div class="code-wrapper">
+                                          <span class="blue">&lt;div</span>
+                                          <span class="green">id=</span>
+                                          <span class="ora">text-wrapper"</span>
+                                          <span class="blue">&gt;   &lt;/div&gt;</span>
+                                   </div>
+                             <p>- Extremely Simple HTML Code</p>
+                             <p>- Either Name Your Container For The Animation Or Change The ID In JavaScript Options</p>
+                             <div class="q-title" style="margin-top:30px;">CSS</div>
+                             <div class="code-wrapper">
+                                   <span class="blue">.letter</span>{
+                                   <span class="green">display:</span>
+                                   <span class="ora"> inline-block</span>; }<br>
+                                   <span class="blue">.letter.hidden</span>{
+                                   <span class="green">display:</span>
+                                   <span class="ora"> none</span>; }<br>
+                                   <span class="blue">.word</span>{
+                                   <span class="green">display</span>: 
+                                   <span class="ora">inline-block</span>; }
+                     
+                             </div>
+                              <p>- Simplistic CSS</p>
+                             <p>- Style The Wrapper Chosen in JavaScript to choose how text will be displayed</p>
+                      </div>
+                      <div class="quarter">
+                            <div class="q-title">JavaScript</div>
+                             <div class="code-wrapper">
+                                   <span class="blue">function</span> typingScriptOptions(){
+                                    <br><br><div class="indent">
+                                          <span class="blue">var </span><span class="green">message </span>= <span class="ora">"Your Message Goes Here!"</span>;<span class="comment">// Your Message Here</span> 
+                                    </div>
+                                    </br>
+                                    <div class="indent"><span class="comment"> // Message Wrapper Here</span></div>
+                                    <div class="indent">
+                                           messageWrapper = document.<span class="green">getElementById</span>(<span class="ora">'text-wrapper'</span>);
+                                    </div>
+                                   <br>
+                                   <div class="indent"><span class="comment">//Typing speed in ms</span></div>
+                                    <div class='indent'>
+                                          typingSpeed = 150; 
+                                    </div><br>
+                                   }
+                             </div>
+                            <p>- Only 3 Options To Adjust</p>
+                            <p>- Everything but message can be left default</p>
+                      </div>
+                     
+              </div>
+       </div>
+       <div class="section" id="section-four">
+              <div class="content-wrap" id="c-wrap-four">
+                     <h1>Download Below</h1>
+                     <div class="download-button">
+                            <a href="downloads/framework.zip" download></a>
+                     </div><br>
+                     <h2>Put Framework Files In HTML Header</h2>
+                     <div style="width:80%; min-height:20px; margin:auto;">
+                            <div class="code-wrapper">
+                                   <span class="blue">&lt;head&gt;</span><br><br>
+                                   <div class="indent">
+                                          <span class="blue">&lt;link</span>
+                                          <span class="green">href=</span>
+                                          <span class="ora">"typing_framework_style.css" </span>
+                                          <span class="green">rel=</span>
+                                          <span class="ora">"stylesheet" </span>
+                                          <span class="green">type=</span>
+                                          <span class="ora">"text/css"</span>
+                                          <span class="blue"> /&gt;</span>
+                                   </div><br>
+                                   <div class="indent">
+                                          <span class="blue">&lt;script </span>
+                                          <span class="green">src=</span>
+                                          <span class="ora">"typing_framework_script.js"</span>
+                                          <span class="green">type=</span>
+                                          <span class="ora">"text/javascript"</span>
+                                          <span class="blue">&gt;&lt;/script&gt;</span>
+                                   </div>
+                                   <div class="indent">
+                                          <span class="blue">&lt;script </span>
+                                          <span class="green">src=</span>
+                                          <span class="ora">"custom_typing_options.js"</span>
+                                          <span class="green">type=</span>
+                                          <span class="ora">"text/javascript"</span>
+                                          <span class="blue">&gt;&lt;/script&gt;</span>
+                                   </div><br>
+                                    <span class="blue">&lt;/head&gt;</span>
+                            </div>
+                     </div><br>
+                     <h2>And You're All Set!</h2>
+              </div>
+       </div>
+</div>
+
+
+</body>
+</html>
