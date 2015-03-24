@@ -1,9 +1,12 @@
-
+body{
+     background-image:url('../images/ps_neutral.png');
+}
 .wrapper {
        width:90%;
        padding-top: 50px;
        margin: auto;
        font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+     background-color:rgba(255,255,255,0.9);
 }
 
 .page-title {
