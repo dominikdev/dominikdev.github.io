@@ -1,7 +1,3 @@
-function pageLoaded(){
-       document.getElementById('url-input').value = "http://www.dominikdev.com";
-}
-
 function changeUrl(){
        var urlInput = document.getElementById('url-input');
        var theFrame = document.getElementById('mp-iframe');

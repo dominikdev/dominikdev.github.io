@@ -6,14 +6,10 @@
 }
 
 .iphone #mobile-preview-inner {
-     height: 568px;
-     width:320px;
-     background-color:white;
-     margin: auto;
-     overflow-x: hidden;
-     position: relative;
-     left:-10px;
-
+       height: 568px;
+       width:320px;
+       background-color:white;
+       margin: auto;
 }
 .ipad #mobile-preview-inner {
        height: 768px;
@@ -29,7 +25,6 @@
        border-radius: 15px;
        margin: auto;
        margin-top: 10px;
-     position: relative;
 }
 .iphone{
        padding:60px 20px;
@@ -90,8 +85,4 @@ body {
 }
 #input-submit:hover{
        background-color:rgba(0,0,0,0.1);
-}
-
-#mp-iframe {
-     width:335px;
 }
