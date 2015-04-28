@@ -17,6 +17,15 @@
        color:#3278bf;
        font-family: "Century Gothic",CenturyGothic,AppleGothic,sans-serif; 
 }
+.test-title a{
+     text-decoration: none;
+     color: inherit;
+     transition: color 0.5s ease;
+}
+.test-title a:hover{
+     color:rgba(50,120,191,0.5);
+     
+}
 
 .iphone{
        height:568px;
