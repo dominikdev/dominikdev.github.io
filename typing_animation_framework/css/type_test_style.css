@@ -196,6 +196,15 @@
        font-weight: 900;
        
 }
+.section .content-wrap h2 a{
+     color: inherit;
+     font-weight: 500;
+     transition: color 0.5s ease;
+}
+.section .content-wrap h2 a:hover{
+     color:rgba(255,255,255,0.5);
+     
+}
 .code-wrapper {
        font-size:16px;
        background-color:white;
@@ -257,7 +266,7 @@
        z-index: 999;
        
        font-size:150px;
-       padding-top: 10px;
+       padding-top: 0px;
        text-align: center;
        color:white;
        opacity: 0.6;

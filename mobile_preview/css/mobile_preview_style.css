@@ -91,5 +91,8 @@ body {
        background-color:rgba(0,0,0,0.1);
 }
 
-#mp-iframe {
+.mp-iframe {
+     height:568px;
+     width:335px;
+     display: block;
 }

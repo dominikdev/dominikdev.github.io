@@ -103,7 +103,7 @@
        transition:all 1s ease;
        transition-delay: 1s;
 }
-#mobile-preview-button.hidden,#full-preview-button.hidden{
+#mobile-preview-button.hidden,#full-preview-button.hidden, #gh-repo-button.hidden{
        opacity: 0.0;
        cursor: default;
 }
@@ -129,4 +129,29 @@
        transition:all 1s ease;
        transition-delay: 1s;
 
+}
+
+#gh-repo-button {
+     height: 100px;
+     width:200px;
+     background-color:rgba(0,0,0,0.8);
+     color:white;
+     border-top-right-radius: 10px;
+     position: absolute;
+     z-index: 9999;
+     bottom: 0;
+     left:0;
+     margin-top:0px;
+     cursor:pointer;
+
+     font-family: Calibri,Candara,Segoe,"Segoe UI",Optima,Arial,sans-serif;
+     text-align: center;
+     font-size:30px;
+     padding-top:20px;
+     transition:all 1s ease;
+     transition-delay: 1s;
+}
+#gh-repo-button a{
+     color: inherit;
+     text-decoration: none;
 }

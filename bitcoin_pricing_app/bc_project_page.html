@@ -15,6 +15,9 @@
               <div id="full-preview-button" class="hidden" onclick="bringUpFullPreview()">
                      View Full Preview
               </div>
+               <div id="gh-repo-button" class="hidden">
+                    <a href="https://github.com/dominikdev/bitcoin_pricing">View Code On GitHub</a>
+               </div>
               <div id="preview-wrapper-inner" class="one">
                      <div id="full-preview">
                             <iframe src="bitcoin_pricing_app/index.html"></iframe>
@@ -39,5 +42,8 @@
               document.getElementById('mobile-preview-button').setAttribute('class','');
               document.getElementById('full-preview-button').setAttribute('class','hidden');
        }
+     setTimeout(function(){
+          document.getElementById('gh-repo-button').setAttribute('class','');
+     },4000);
 </script>
 </html>
