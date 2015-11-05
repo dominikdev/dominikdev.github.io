@@ -1,22 +1,24 @@
+<!DOCTYPE html>
+
 <html>
   <head>
   <title>Dynamic Mobile Preview</title>
 	<link href="css/reset.css" rel="stylesheet" type="text/css" />
-	<link href="css/responsive_ten_grid.css" rel="stylesheet" type="text/css" />
 	<link href="css/mobile_preview_style.css" rel="stylesheet" type="text/css" />
 	<script src="js/dynamic_preview_script.js" type="text/javascript"></script>
   </head>
 <body> 
        <div class="wrapper">
               <div id="options-window">
-                     <input id="url-input" type="url" placeholder="enter URL here">
-                     <div id="input-submit" onclick="changeUrl()" >Go</div>
-                     
-                     
+                     <h1>Options</h1>
+                     <h2>Url Input:</h2>
+                     <input id="url-input" type="url">
+                     <div id="input-submit" onclick="changeUrl()">Go</div>
+                    <a href="" style="display:block; margin-top:20px; color:inherit;">View Code On Github</a>
               </div>
               <div id="mobile-preview-outer" class="iphone">
                      <div id="mobile-preview-inner">
-                            <iframe id="mp-iframe" height="568" width="340" src="http://www.dominikdev.com"></iframe>
+                            <iframe class="mp-frame" id="mp-iframe" height="568" src="http://www.dominikdev.com"></iframe>
                      </div>
               </div>
        </div>
